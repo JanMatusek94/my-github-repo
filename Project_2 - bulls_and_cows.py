@@ -99,5 +99,6 @@ def game():
         pozice_i_hodnota = 0
         pocet_pokusu += 1
 
+
 if __name__ == "__main__":
     game()
