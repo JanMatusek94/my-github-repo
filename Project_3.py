@@ -73,12 +73,12 @@ def game():
             total_time = round(time.time() - start_time, 1)
             if pocet_pokusu == 1:
                 print(ODDEL)
-                print(f"Correct, you've guessed the right answer\nin {str(pocet_pokusu)} guess.")
-                print(f"It took you {str(total_time)} seconds.")
+                print(f"Correct, you've guessed the right answer\nin {pocet_pokusu} guess.")
+                print(f"It took you {total_time} seconds.")
             else:
                 print(ODDEL)
-                print(f"Correct, you've guessed the right answer\nin {str(pocet_pokusu)} guesses.")
-                print(f"It took you {str(total_time)} seconds.")
+                print(f"Correct, you've guessed the right answer\nin {pocet_pokusu} guesses.")
+                print(f"It took you {total_time} seconds.")
             for index, cas in enumerate(casy):
                 if total_time <= cas:
                     index_hodnoceni = tabulka_hodnoceni[index]
@@ -91,11 +91,11 @@ def game():
         elif pozice_i_hodnota == 1 and pozice == 1:
             print("1 bull, 1 cow")
         elif pozice_i_hodnota != 1 and pozice == 1:
-            print(str(pozice_i_hodnota) + " bulls, " + "1 cow")
+            print(f"{pozice_i_hodnota} bulls, 1 cow")
         elif pozice_i_hodnota == 1 and pozice != 1:
-            print("1 bull " + str(pozice) + " cows")
+            print(f"1 bull, {pozice} cows")
         else:
-            print(str(pozice_i_hodnota) + " bulls " + str(pozice) + " cows")
+            print(f"{pozice_i_hodnota} bulls, {pozice} cows")
         pozice = 0
         pozice_i_hodnota = 0
         pocet_pokusu += 1
