@@ -74,11 +74,11 @@ def game():
             if pocet_pokusu == 1:
                 print(ODDEL)
                 print(f"Correct, you've guessed the right answer\nin {str(pocet_pokusu)} guess.")
-                print("It took you " + str(total_time) + " seconds.")
+                print(f"It took you {str(total_time)} seconds.")
             else:
                 print(ODDEL)
                 print(f"Correct, you've guessed the right answer\nin {str(pocet_pokusu)} guesses.")
-                print("It took you " + str(total_time) + " seconds.")
+                print(f"It took you {str(total_time)} seconds.")
             for index, cas in enumerate(casy):
                 if total_time <= cas:
                     index_hodnoceni = tabulka_hodnoceni[index]
