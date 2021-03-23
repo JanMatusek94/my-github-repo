@@ -60,7 +60,6 @@ def game():
     index_hodnoceni = ""
     casy = [10, 30, 60]
     while True:
-        print(generovane_cislo)
         print(ODDEL)
         hadane_cislo = hadej_cislo()
         for index, i in enumerate(hadane_cislo):
